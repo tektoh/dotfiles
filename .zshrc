@@ -18,7 +18,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/segawa/google-cloud-sdk/path.zsh.inc'
+source "$HOME/google-cloud-sdk/path.zsh.inc"
 
 # The next line enables shell command completion for gcloud.
-source '/Users/segawa/google-cloud-sdk/completion.zsh.inc'
+source "$HOME/google-cloud-sdk/completion.zsh.inc"
