@@ -1,3 +1,5 @@
+export LANG=ja_JP.UTF-8
+
 # git
 autoload -Uz vcs_info
 setopt prompt_subst
@@ -14,6 +16,10 @@ compinit
 export PATH="$HOME/.rbenv/bin:$PATH" 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -22,3 +28,16 @@ source "$HOME/google-cloud-sdk/path.zsh.inc"
 
 # The next line enables shell command completion for gcloud.
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
+
+# Android
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
+
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# Postgresql
+export PGDATA=/usr/local/var/postgres
+
+export PATH="./bin:$PATH"
+
