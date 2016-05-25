@@ -36,8 +36,11 @@ export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+# npm
+export PATH=./node_modules/.bin:$PATH
+
 # Postgresql
 export PGDATA=/usr/local/var/postgres
 
-export PATH="./bin:$PATH"
+export PATH=./bin:$PATH
 
