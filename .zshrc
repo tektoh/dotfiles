@@ -44,3 +44,6 @@ export PGDATA=/usr/local/var/postgres
 
 export PATH=./bin:$PATH
 
+# Wareki
+alias heisei='echo 平成$(expr $(date +%Y) - 1988)年'
+
