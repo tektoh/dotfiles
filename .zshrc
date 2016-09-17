@@ -44,6 +44,11 @@ export PGDATA=/usr/local/var/postgres
 
 export PATH=./bin:$PATH
 
+###
+
+# Ruby
+alias be='bundle exec'
+
 # Wareki
 alias heisei='echo 平成$(expr $(date +%Y) - 1988)年'
 
