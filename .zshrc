@@ -47,6 +47,7 @@ export PATH=./bin:$PATH
 ###
 
 # Ruby
+alias bi='bundle install'
 alias be='bundle exec'
 
 # Wareki
