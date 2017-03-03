@@ -46,8 +46,12 @@ set history=50
 
 "paste
 if &term =~ "xterm"
-  let &t_SI .= "\e[?2004h"
-  let &t_EI .= "\e[?2004l"
+  "let &t_SI .= "\e[?2004h"
+  "let &t_EI .= "\e[?2004l"
+  let &t_ti.="\e[1 q"
+  let &t_SI.="\e[5 q"
+  let &t_EI.="\e[1 q"
+  let &t_te.="\e[0 q"
   let &pastetoggle = "\e[201~"
 
   function XTermPasteBegin(ret)

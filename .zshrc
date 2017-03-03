@@ -13,9 +13,11 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -Uz compinit
 compinit
 
-export PATH="$HOME/.rbenv/bin:$PATH" 
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
+# pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
@@ -39,9 +41,14 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 # npm
 export PATH=./node_modules/.bin:$PATH
 
+# direnv
+export EDITOR=vim
+eval "$(direnv hook zsh)"
+
 # Postgresql
 export PGDATA=/usr/local/var/postgres
 
+export PATH=/usr/local/bin:$PATH
 export PATH=./bin:$PATH
 
 ###
